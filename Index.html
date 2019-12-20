@@ -1,0 +1,192 @@
+<style>
+    .page-content {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+</style>
+
+<html>
+    <head>
+        <script async src="https://cdn.byu.edu/byu-theme-components/1.x.x/byu-theme-components.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.byu.edu/byu-theme-components/1.x.x/byu-theme-components.min.css">
+        <link rel="stylesheet" href="https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>    
+    </head>
+<body>
+    <byu-header>
+        <h3 id="secondary-header">Dining Services</h3>
+        <span slot="site-title">Meal Plans</span>
+        <byu-user-info slot="user" class="byu-component-rendered" role="button">
+            <a href="https://cas.byu.edu/cas/login" slot="login">Login</a>
+            <a slot="logout" href="javascript: document.getElementById('logoutForm').submit()" id="admin-button">Logout </a>
+        </byu-user-info>
+        <byu-search slot="search" action="navigate" action-target="/Search?q=${search}" class="byu-component-rendered"></byu-search>
+        <div slot="nav" >
+            <div class="nav-wrapper">
+                <a href="#" >Home</a>
+                <a  id="mealPlans" onclick="showDiv()">Meal Plans &#9660;</a>
+                <a href="">My Dining Account &#9660;</a>
+            </div>
+        </div>
+    </byu-header>
+    
+    <div class="page-banner" >
+        <div id="meal-plan-div" style="display: none;" ;>
+        <div class="meal-plan-div-title">Welcome new Students!</div>
+        <div class="sub-wrapper">
+            <div class="meal-plan-card">s<h3>MEAL PLANS</h3>
+            Ez Dining<br>Dining Dollars<br>Eating Essentials<br>Cannon Block Meals</div>
+            <div class="meal-plan-card"><h3>MEAL PLANS: <br>
+                HELAMAN APPROVED</h3>
+                <a href="https://google.com">Basic</a><br>
+                Dining Plus<br>
+                Dining Dollars Blue<br>
+                19+<br>
+                Open Door 7</div>
+            <div class="meal-plan-card"><H3>MEAL PLAN INFO</H3>
+                Compare Plans<br>
+                Testimonals<br>
+                Help Me Choose</div>
+
+        </div>
+        </div>
+        <div class="banner-text">
+            <span class="banner-title">Plan Details</span><br>
+            For students living in Helaman Halls
+        </div>
+    <div class="content">
+        <div class="content-left">
+            <div class="content-left-banner">
+                <div class="left-banner-header">MEAL PLANS:<br> HELAMAN APPROVED</div>
+                <div class="left-banner-content-wrapper">
+                    <div class="left-banner-content">Basic</div>
+                    <div class="left-banner-content selected">Dining Plus</div>
+                    <div class="left-banner-content">Dining Dollars Blue</div>
+                    <div class="left-banner-content">Nineteen Plus</div>
+                    <div class="left-banner-content">Open Door 7</div>
+                    <button class="btn-hero">BUY NOW</button>
+                </div>
+
+            </div>
+            <div class="comment-card">
+                <div class="comment-text">"I had more time to focus on school work since I didn't ahve to cook." </div>
+                <div class="comment-author">Halie Jarvis<br>Freshman, Dining Plus</div>
+            </div>
+            <div class="comment-card">
+                <div class="comment-text">"Dining Dollars Blue was so helpful when I needed a snack at the vending machine or if I wanted to grab lunch with friends at the Cougareat."</div>
+                <div class="comment-author">Leilani Harmuth<br> Freshman, Dining Dollars Blue</div>
+            </div>
+        </div>
+
+        <div class="content-main">
+            <div class="content-promo">
+                <div class="content-main-A">
+                    <div class="content-main-A-img"><img src="./assets/burger.png"></div>
+                    <div class="content-main-A-text"><h3>Conveniently Eat  On Campus</h3><br>Rated at 4.55 stars in ease of use, it’s no wonder that Dining Dollars holders enjoy being able to
+                        use their meal plan all over campus. Try Legend’s savory salmon, or Harvey’s portobello fontina
+                        panini. Salivating yet? It only begins here with Dining Dollars</div>
+                </div>
+                <div class="content-main-B">
+                    <div class="content-main-B-sub"><h3>Affordable</h3><br>Think about how much you typically purchase food in a month? It may be more than what you think. Dining Dollars is only $125 a month for a semester. If you spend that much on food normally, you might as well save while you are at it.</div>
+                    <div class="content-main-B-sub"><h3>Discounted Great Filling Meals</h3>Everything you buy with Dining Dollars is tax free. On top on that, Dining Dollars also provides great discount at the all-you-care-to-eat diner, the Cannon Commons. Stop by to enjoy many dishes, including a flavor-packed Navajo Taco, for an average of 25% off.</div>
+                    <div class="content-main-B-sub"><h3>Additional Details</h3><br>If you want to know more about the Dining Dollars Meal Plan visit the My Dining Account page here to learn more</div>
+                </div>
+            </div>
+        <div class="content-main-price">
+            <table>
+                <tr>
+                  <th></th>
+                  <th><b>Breakfast</b></th>
+                  <th>Lunch</th>
+                  <th>Dinner</th>
+                  <th>Sunday Breakfast</th>
+                  <th>Sunday Dinner</th>
+                </tr>
+                <tr>
+                  <td><b>Normal Price</b></td>
+                  <td>$7.70</td>
+                  <td>$9.75</td>
+                  <td>$11.50</td>
+                  <td>$7.70</td>
+                  <td>$14.00</td>
+
+                </tr>
+                <tr>
+                  <td><b>Discount A</b></td>
+                  <td>$2.20</td>
+                  <td>$4.30</td>
+                  <td>$6.50</td>
+                  <td>$4.30</td>
+                  <td>$8.60</td>
+                </tr>
+                <tr>
+                  <td><b>Discount B</b></td>
+                  <td>$5.55</td>
+                  <td>$6.90</td>
+                  <td>$9.60</td>
+                  <td>$5.55</td>
+                  <td>$9.60</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<byu-footer class="byu-component-rendered" max-width="1200px">
+    <byu-footer-column class="byu-component-rendered">
+        <span slot="header">Contact</span>
+        <p>
+            Brigham Young University<br>Provo, UT 84602<br>801-422-4636
+        </p>
+    </byu-footer-column>
+
+    <byu-footer-column class="byu-component-rendered">
+        <span slot="header">Resources</span>
+        <p>
+            <a href="#">A-Z Index</a>
+            <a href="#">BYU Mobile App</a>
+            <a href="#">Counseling and Career Center</a>
+            <a href="#">Helping Distressed Students</a>
+            <a href="#">Library</a>
+            <a href="#">Office of OIT</a>
+
+        </p>
+    </byu-footer-column>
+
+    <byu-footer-column class="byu-component-rendered">
+        <span slot="header">OTHER CES SCHOOLS</span>
+        <p>
+            <a href="#">BYU-Hawaii</a>
+            <a href="#">BYU-Idaho</a>
+            <a href="#">BYU Pathway Woldwide</a>
+            <a href="#">LDS Businesss College</a>
+
+        </p>
+    </byu-footer-column>
+
+
+    <byu-footer-column class="byu-component-rendered">
+        <span slot="header">Connect</span>
+        <byu-social-media-links class="byu-component-rendered">
+            <a class="facebook" href="http://www.facebook.com/byufhss" title=" Facebook ">Facebook</a>
+            <a class="twitter" href="https://twitter.com/byu_fhss" title=" Twitter ">Twitter</a>
+            <a class="instagram" href="http://instagram.com/byufhss/" title=" Instagram ">Instagram</a>
+            <a class="youtube" href="https://www.youtube.com/channel/UCGkhd2P8yYdw6Wxk-Ycgp9Q" title=" YouTube ">Youtube</a>
+        </byu-social-media-links>
+        <a href="#">BYU Alumni</a>
+        <a href="#">BYU Athletics</a>
+        <a href="#">BYU News</a>
+        <a href="#">BYU Store</a>
+        <a href="#">BYU tv</a>
+
+
+
+    </byu-footer-column>
+    </byu-footer>
+</body>
+</html>
+    

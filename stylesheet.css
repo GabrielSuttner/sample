@@ -1,0 +1,211 @@
+.body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    
+}
+
+.nav-wrapper > a{
+    text-decoration: none;
+    padding: 0 25px; 
+    font-size: 18px;;
+    height: 100%;
+    width: 100%;
+    color: black;
+    line-height: 1.5em;
+
+}
+.nav-wrapper > a:hover{
+    background-color: #002E5D;
+    color: white;
+}
+
+#meal-plan-div{
+    position: absolute;
+    background-color: rgb(221, 221, 221);
+    height: 300px;
+    width: 70%;
+    margin: 85px 15% 0 15%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.meal-plan-div-title{
+    width: 70%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #002E5D;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 24px;
+}
+.sub-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.meal-plan-card{
+    background-color: white;
+    padding: 5px;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    color: gray;
+    text-align: left;
+    padding-left: 25px;
+    line-height: 22px;
+}
+
+.page-banner{
+    background-image: url(assets/hero.png);
+    background-size: contain;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.banner-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.banner-text{
+    color:white;
+    margin-left: 80vw;
+    padding-top: 20%;
+    height: 43vh;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 200px;
+    width: 15%;
+    margin: -25px 25px 20px 25px;
+    font-size: 14px;
+}
+.left-banner-content-wrapper{
+    margin:  0 15px 15px 15px;
+}
+.content-left-banner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+
+}
+.selected{
+    font-weight: bold;
+}
+.left-banner-content{
+    margin: 0 0;
+    border-bottom: 1px black solid;
+    padding: 25px;
+
+}
+.left-banner-header{
+    text-align: center;
+    padding: 25px;
+    background-color: #d1d0d0;
+    font-weight: bold;
+}
+
+.btn-hero{
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    align-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    background-color: #0062B8;
+    display: inline-block;
+    color: #ffffff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.comment-card{
+    width: 100%;
+    height: 150px;
+    box-shadow: 5px 10px 8px #888888;
+    border-top: 20px #002E5D solid;
+    margin: 15px 0;
+    padding: 10px;
+}
+.comment-text{
+    text-align: center;
+    height: 80%;
+
+}
+.comment-author{
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-main{
+    width: 65%;
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    flex-wrap: wrap;
+}
+.content-promo{
+    display: flex;
+}
+
+.content-main-A-img > img{
+    width: 100%;
+}
+.content-main-A{
+}
+.content-main-B{
+    margin: 15px;
+    padding-left: 15px;
+    border-left: 1px solid black;
+}
+h3{
+    color:#0062B8;
+}
+
+.content-main-price{
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+tr{
+    margin: 0 auto;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+td, th{
+text-align: left;
+padding: 8px;
+}
+tr:first-child{
+    font-weight: bold;
+}
